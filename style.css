@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+  background: #fff8f0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Card container */
+.invitation-card {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  border: 2px solid #e0c097;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.invitation-card h1 {
+  font-size: 28px;
+  color: #b85c38;
+  margin-bottom: 10px;
+}
+
+/* Subheading */
+.invitation-card h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Details */
+.details {
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* QR code */
+.qr-code {
+  margin: 20px 0;
+}
+
+.qr-code img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Blessings button */
+.bless-btn {
+  display: inline-block;
+  background: #b85c38;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.bless-btn:hover {
+  background: #8c3c21;
+}

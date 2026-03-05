@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tilak Ceremony - Aryan & Kajal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff8e7, #fceabb);
+      text-align: center;
+      color: #8b0000;
+    }
+
+    .invitation {
+      padding: 40px;
+    }
+
+    .title {
+      font-size: 3em;
+      font-weight: bold;
+      color: #cc6600;
+      text-shadow: 0 0 10px #ff9933;
+    }
+
+    .details {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .qr {
+      margin: 20px auto;
+      border: 3px solid #8b0000;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      background: #fff;
+    }
+
+    .bless-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background-color: #ff9933;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ffcc66;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .bless-btn:hover {
+      transform: scale(1.1);
+      background-color: #cc6600;
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation">
+    <h1 class="title">TILAK CEREMONY</h1>
+    <h2>Aryan & Kajal</h2>
+
+    <p class="details">📅 Date: 15 April 2026</p>
+    <p class="details">📍 Venue: P.S Palace, Barra 8, Kanpur</p>
+
+    <!-- Dynamic QR Code -->
+    <div id="qrcode" class="qr"></div>
+
+    <!-- Blessings Button -->
+    <button class="bless-btn" onclick="showBlessing()">Send Blessings</button>
+  </div>
+
+  <!-- QRCode.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script>
+    function showBlessing() {
+      alert("💖 Aryan & Kajal ko tilak ki dher saari shubhkamnayein!");
+    }
+
+    window.onload = () => {
+      new QRCode(document.getElementById("qrcode"), {
+        text: "https://maps.google.com/?q=P.S+Palace+Barra+8+Kanpur",
+        width: 150,
+        height: 150,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+      });
+    };
+  </script>
+</body>
+</html>
